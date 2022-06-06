@@ -1,0 +1,38 @@
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+
+@keyframes slideFromTop{ 
+    from {
+        position: relative;
+        top:-200px;
+    }
+    to{
+        position: relative;
+        top:0px;
+    }
+}
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+.slideFromTop{
+    position: relative !important;
+    animation: slideFromTop 1.8s;
+}
+
+.fadeIn{
+    animation: fadeIn 1.8s;
+}

@@ -1,0 +1,160 @@
+@import url("animations.css");
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* EDIT  */
+
+.input-container{
+  width:fit-content;
+  margin:50px auto;
+}
+.input-container > label{
+  display:block;
+  cursor:pointer;
+}
+.input-container > input, 
+.input-container > select, 
+.input-container > textarea{
+  left:20px;
+  width:600px;
+  position:relative;
+  border:1px solid white;
+  outline:none;
+  border-bottom:1px solid grey;
+  transition: 0.2s ease-in-out;
+  padding:3px;
+}
+.input-container > textarea{
+  resize:none;
+  padding:10px;
+  
+}
+.input-container > input:hover, 
+.input-container > select:hover,
+.input-container > textarea:hover {
+  color:black;
+  transform: scale(1.1);
+}
+
+.input-container > input:focus{
+  border:1px solid black;
+  border-radius:7px;  
+}
+
+
+.scroll::-webkit-scrollbar {
+  display: none;
+  height:550px !important;
+}
+
+tr{
+  transition: 0.2s;
+  cursor:pointer;
+}
+tr:hover{
+  transform: scale(1.025);
+}
+
+
+
+.car-info{
+  animation: fadeIn 3s;
+  margin:10px;
+}
+.car-params{
+  margin:0px;
+}
+.car-data{
+  position: relative;
+  left:25px;
+  font-weight: bold;
+}
+
+
+.center{
+  width:fit-content;
+  margin:auto;
+}
+
+.center > button{
+  display:inline-block !important;
+  margin:10px;
+  transition: 0.1s ease-in-out;
+}
+.center> button:hover{
+  transform: scale(1.1);
+}
+
+.opravy-container{
+  width:fit-content;
+  margin:10px auto;
+  position: relative;
+  margin-top:100px;
+}
+
+.opravy-container > span{
+  font-weight: bold;
+}
+.opravy {
+margin-left: 25px;
+transition: 0.15s ease-in-out;
+border-bottom:1px solid grey;
+margin:10px;
+cursor:pointer;
+}
+.opravy:hover {
+  transform: scale(1.07);
+}
+.oprava{
+  margin:1px;
+}
+
+
+
+
+.box-container > label{ 
+  display: block;
+  font-weight:bold;
+}
+.box-container > input, .box-container > textarea{ 
+  resize:none;
+  width:400px;
+  position: relative;
+  left:25px;
+  text-decoration:none;
+  outline:none;
+  border:1px solid white;
+  border-bottom:1px solid grey;
+  transition:0.1s ease-in-out;
+}
+
+.box-container > input:hover, .box-container > textarea:hover{ 
+  transform: scale(1.1);
+}
